@@ -1,0 +1,9 @@
+.listtile_container{
+    height: 100%;
+    padding: 50px;
+}
+
+p{
+    margin: 20px;
+    text-align: center;
+}

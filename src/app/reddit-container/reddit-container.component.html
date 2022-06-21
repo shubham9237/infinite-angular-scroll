@@ -1,0 +1,13 @@
+<div class="listtile_container" id="infinite-list">
+  <!-- list of reddit posts START -->
+  <ng-container *ngFor="let post of posts">
+    <app-listtile
+      [thumbnail]="post.data?.thumbnail"
+      [author]="post.data?.author"
+      [title]="post.data?.title"
+      [post_link]="post.data?.permalink"
+    ></app-listtile>
+  </ng-container>
+  <!-- list of reddit posts END -->
+  <p *ngIf="isLoading">Loading...</p>
+</div>
